@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="dl.css">
+	<script>
+		window.onload=function(){
+			var oBtn1=document.getElementById('btn1');
+			var oBtn2=document.getElementById('btn2');
+			var oForm=document.getElementById('form');
+			var oForm1=document.getElementById('form1');
+			var oImg=document.getElementById('img');
+			var oHid=document.getElementById('hid');
+			var off=true;
+			var aLi=oHid.getElementsByTagName('li');
+			var oDiv=document.getElementById('div')
+			oBtn1.onclick=function(){
+				oForm.style.display='block';
+				oForm1.style.display='none';
+				oBtn1.style.color='#000';
+				oBtn2.style.color='#bbb';
+			
+							}
+			oBtn2.onclick=function(){
+				oForm.style.display='none';
+				oForm1.style.display='block';
+				oBtn2.style.color='#000';
+				oBtn1.style.color='#bbb'
+			}
+			oImg.onclick=function(){
+				if (off) {
+					oHid.style.display='block';
+					off=false;
+				}
+				else{
+					oHid.style.display="none";
+					off=true
+				}
+				
+			}
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].index=i;
+				aLi[i].onclick=function(){
+					oDiv.innerHTML=this.innerHTML;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="hea">
+			<img src="img/630.png" alt="">
+		</div>
+		<div class="min">
+			<div class="left">
+				<img src="img/631.jpg" alt="">
+			</div>
+			<div class="right">
+				<div class="hea">
+					<div id="btn1">普通登录</div>
+					<div id="btn2">手机无密码登录</div>
+				</div>
+				<div class="form" id="form">
+					<form action="">
+						<input type="text" value="昵称/邮箱/手机号" class="input1" onfocus="if (value=='昵称/邮箱/手机号') {value=''}" onblur="if (value=='') {value='昵称/邮箱/手机号'}" ="">
+						<input type="text" value="密码" class="input2" onfocus="if (value=='密码') {value=''}" onblur="if (value=='') {value='密码'}" ="">
+						<input type="checkbox" class="input3">
+						<span>2周自动登录</span>
+						<strong>忘记密码?</strong>
+						
+					</form>
+				</div>
+				<div class="form1" id="form1">
+					<div class="dq">
+					<div id="div">中国</div>
+					<img src="img/639.png" alt="" id="img"></div>
+					<input type="text" value="手机号码" class="input2" onfocus="if (value=='手机号码') {value=''}" onblur="if (value=='') {value='手机号码'}" ="">
+					<input type="text" value="动态密码" class="input3" onfocus="if (value=='动态密码') {value=''}" onblur="if (value=='') {value='动态密码'}" ="">
+					<div class="dtmm">获取手机动态密码</div>
+			
+				</div>
+				
+				<div id="hid">
+						<ul>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+
+							<li>日本</li>
+							<li>日本</li>
+							<li>日本</li>
+							<li>日本<li>
+
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+						</ul>
+					</div>
+
+
+
+				<div class="btn">
+					登录
+				</div>
+				<div class="zcfs">
+					<span><u>海外手机登录</u></span><span><u>新用户注册</u></span>
+				</div>
+				<div class="hzwz">
+					<p>你也可以用以下方式注册：</p>
+					<ul>
+						<li><img src="img/633.png" alt=""></li>
+						<li><img src="img/634.png" alt=""></li>
+						<li><img src="img/635.png" alt=""></li>
+						<li><img src="img/636.png" alt=""></li>
+						<li><img src="img/637.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="foot">
+			<ul>
+				<li>新手帮助</li>
+				<li>如何购买</li>
+				<li>支付教程</li>
+				<li>优惠券使用</li>
+				<li>常见问题</li>
+			</ul>
+			<ul>
+				<li>权益保障</li>
+				<li>全国包邮</li>
+				<li>七天无理由退货</li>
+				<li>退货运费补贴</li>
+				<li>72小时发货</li>
+			</ul>
+			<ul>
+				<li>商家服务</li>
+				<li>免费开店<li>
+				<li>商家社区</li>
+				<li>商家入驻</li>
+				<li>管理后台</li>
+			</ul>
+			<div class="khd">
+				<h4>蘑菇街移动客户端</h4>
+				<img src="img/638.png" alt="">
+			</div>
+			<div class="sj">
+				©Copyright 2010-2016蘑菇街 Mogujie.com (增值电信业务经营许可证：浙B2-20110349)
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

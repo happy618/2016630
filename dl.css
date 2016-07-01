@@ -1,0 +1,249 @@
+@charset='utf-8';
+*{
+	margin:0px;
+	padding: 0px;
+}
+.main{
+	width:1000px;
+	height: auto;
+	margin:0px auto;
+
+}
+.main>.hea{
+	margin-top: 50px;
+}
+.main .min{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.min div{
+	float: left;
+	cursor: pointer;
+}
+.min .right{
+	width: 350px;
+	position: relative;
+	border:1px solid #ccc;
+	margin-left: 100px;
+}
+
+.min .right .hea{
+	width: 350px;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	background-image: url(img/632.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-origin: border-box;
+}
+.min .right .hea div{
+	float: left;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size:15px;
+	font-weight: bold;
+	color: #bbb;
+	
+	width: 150px;
+}
+.min .right .hea div:first-child{
+	border-
+}
+.min .right .hea div:last-child{
+
+}
+.form  .input1,.form .input2{
+	width: 300px;
+	height: 30px;
+	margin-left: 25px;
+	margin-top: 20px;
+	color: #ccc;
+	outline: medium;
+}
+
+.form .input3{
+	margin-left: 25px;
+	margin-top: 12px;
+}
+.form span{
+	font-size: 13px;
+	color: #bbb;
+	text-align: center;
+	margin-left: 5px;
+}
+.form strong{
+	margin-left: 135px;
+	font-size: 13px;
+	color: #bbb;
+}
+
+
+
+
+.form1 .dq{
+	margin-left: 25px;
+	width: 90px;
+	height: 30px;
+	border:1px solid #ccc;
+	text-align: center;
+
+
+}
+.form1{
+		margin-top: 20px;
+		display: none;
+		
+}
+.form1 .dq img{
+	display: inline-block;
+	margin-left: 18px;
+	cursor: pointer;
+}
+.form1 .dq div:first-child{
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.form1 .input2{
+	height: 28px;
+	width: 185px;
+	margin-left: 15px;
+	outline: medium;
+	
+}
+.form1 .input3{
+	width: 300px;
+	outline: medium;
+	
+}
+.form1 .dtmm{
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: -webkit-linear-gradient(#fff,#ddd);
+	margin-left: 25px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+
+.form1 .input3{
+	height: 30px;
+	width: 300px;
+	margin-left: 25px;
+	margin-top: 20px;
+	
+}
+
+input{
+	color: #ccc
+}
+
+
+.right .btn{
+	width: 300px;
+	height: 30px;
+	margin-left: 25px;
+	background-color: rgb(255,68,102);
+	border-radius: 2px;
+	margin-top: 15px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.zcfs span{
+	color: #bbb;
+	
+	font-size: 13px;
+	cursor: pointer;
+}
+.zcfs{
+	margin-top: 20px;
+	cursor: pointer;
+}
+.zcfs span:first-child{
+	margin-left: 25px;
+
+}
+.zcfs span:last-child{
+	margin-left: 145px;
+}
+li{
+	list-style: none;
+	cursor: pointer;
+}
+.hzwz p{
+	color: #bbb;
+	font-size: 13px;
+	cursor: pointer;
+
+}
+.hzwz{
+	margin-left: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.hzwz ul li{
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#hid{
+	width: 200px;
+	height: 300px;
+	border:1px solid #ccc;
+	overflow: auto;
+	position: absolute;
+	top:100px;
+	left: 25px;
+	background: #fff;
+	display: none;
+
+}
+.foot{
+clear: both;
+width: 100%;
+height: auto;
+}
+.foot ul{
+	float: left;
+	margin-left: 50px;
+	margin-top: 150px;
+	color: #bbb;
+	font-size: 13px;
+}
+.foot ul li:first-child{
+	color: #aaa;
+	font-weight: bold;
+
+}
+.foot .khd {
+	float: left;
+	margin-top: 130px;
+	margin-left: 400px;
+}
+.foot .khd h4{
+	margin-bottom: 15px;
+}
+.sj{
+	clear: both;
+	height: 10px;
+	width: 100%;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #aaa;
+	margin-left: 50px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+
+	font-size: 13px;
+
+}
