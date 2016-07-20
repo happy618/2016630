@@ -3,8 +3,16 @@
 	margin:0px;
 	padding: 0px;
 }
+html{
+	width: 1360px;
+}
+body{
+	width: 100%;
+	margin: 0px auto;
+}
+
 .main{
-	width:1000px;
+	width:80%;
 	height: auto;
 	margin:0px auto;
 
@@ -19,6 +27,11 @@
 .min div{
 	float: left;
 	cursor: pointer;
+}
+.min{
+	width: 1000px;
+	height: auto;
+	margin: 0px auto;
 }
 .min .right{
 	width: 350px;
@@ -208,7 +221,7 @@ li{
 }
 .foot{
 clear: both;
-width: 100%;
+width: 1000px;
 height: auto;
 }
 .foot ul{
