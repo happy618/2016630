@@ -123,48 +123,7 @@
 			var aMoveli=oMoveul.getElementsByTagName('li');
 			var arrimg=['img/z1.jpg','img/z2.jpg','img/z3.jpg','img/z4.jpg','img/z5.jpg','img/z6.jpg']
 			var num=0;
-			var display=null;
-			var timer2=null;
-		
-				timer2=setInterval(function(){
-				
-				num++;
-				
-					if (num==arrimg.length) {
-						num=0
-					}
-					oMoveimg.src=arrimg[num]
-					for(i=0;i<aMoveli.length;i++){
-						aMoveli[i].className=''
-					}
-					aMoveli[num].className='hover'
-
-
-			},5000)
-				oMove.onmouseover=function(){
-					clearInterval(timer2)
-				}
-				oMove.onmouseout=function(){
-					timer2=setInterval(function(){
-				
-				num++;
-				
-					if (num==arrimg.length) {
-						num=0
-					}
-					oMoveimg.src=arrimg[num]
-					for(i=0;i<aMoveli.length;i++){
-						aMoveli[i].className=''
-					}
-					aMoveli[num].className='hover'
-
-			},5000)
-				}
-			
-			
-			
-		
-
+			var display=null
 			
 			oMovebutl.onclick=function(){
 					num--;
@@ -265,10 +224,6 @@ var oHidul=document.getElementById('hidul')
 var aSli=oHidul.getElementsByTagName('li')
 var oSp=document.getElementById('sp')
 var oSerli=document.getElementById('serli')
-var oTop=document.getElementById('top')
-var oaside=document.getElementById('aside')
-var oasideUl=oaside.getElementsByTagName('ul')[0]
-var aasideLi=oasideUl.getElementsByTagName('li')
 
 			oSerli.onmouseover=function(){
 				oHidul.style.display='block'
@@ -294,15 +249,7 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 		else{
 			oHidser.style.display='none'
 		}
-		if (t>10) {
-			oTop.style.display='block'
-		}
-		else{
-			oTop.style.display='none'
-		}
 	}
-
-
 	}
 	</script>
 </head>
@@ -310,10 +257,11 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 
 	<header class="header">
 <!-- 导航栏 -->
-		<div class="hea-top" id="top1">
+
+		<div class="hea-top">
 			<ul class="hea-top-ul">
 				<li>注册</li>
-				<li><a href="dl.html" target="blank">登录</a></li>
+				<li>登录</li>
 				<li class="li">我的订单</li>
 				<li class="li">购物车</li>
 				<li class="li" id="hea-li1"> <a href="#" title="">客户服务</a>
@@ -373,12 +321,12 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 			
 			<div class="saoma">
 				<img src="img/扫码.gif" alt="">
-				<img src="img/二维码.jpg" class="ewm">
+				<img src="img/二维码.jpg" alt="" class="ewm">
 			</div>
 		</div>
 </header>
 
-	<section>
+	<section class="section">
 
 		<section class="section-one">
 <!-- 菜单轮播图主页 -->
@@ -905,7 +853,7 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 		<section class="section-four">
 	<section class="section-three">
 <!-- 男友潮搭 -->
-			<div class="sec-thr" name="1f"> 
+			<div class="sec-thr"> 
 				<div class="sec-thr-top">
 					<div class="div1"></div>
 					<div><h2>男友潮搭</h2></div>
@@ -1181,7 +1129,7 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 		</section>
 
 	<footer class="footer">
-		<div class="foot" id="top2">
+		<div class="foot">
 			<div class="one">
 				<img src="img/f1.png" alt="">
 				<p>营业执照注册号：330106000129004</p>
@@ -1264,6 +1212,5 @@ var aasideLi=oasideUl.getElementsByTagName('li')
 			
 				
 </div>
-
 </body>
 </html>
